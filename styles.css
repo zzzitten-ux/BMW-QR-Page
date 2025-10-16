@@ -1,0 +1,1629 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: #003366;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bmw-logo {
+    height: 40px;
+    width: auto;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: #f8f9fa;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: #003366;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 51, 102, 0.15);
+}
+
+.btn-primary:hover {
+    background: #002244;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 34, 68, 0.18);
+}
+
+.btn-secondary {
+    background: white;
+    color: #003366;
+    border: 2px solid #003366;
+}
+
+.btn-secondary:hover {
+    background: #003366;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #000;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #003366;
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+/* Service Overview */
+.service-overview {
+    padding: 50px 0;
+    background: white;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #003366;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: #003366;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.card-icon i {
+    font-size: 28px;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-size: 0.98rem;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-card li {
+    padding: 8px 0;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #003366;
+    font-weight: bold;
+}
+
+.price-highlight {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.price {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.price-note {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Vehicle Benefits Table */
+.vehicle-benefits {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.table-container {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+.benefits-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.benefits-table th {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.benefits-table td {
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: top;
+}
+
+.benefits-table tr:hover {
+    background: #f8f9fa;
+}
+
+.highlight-row {
+    background: #f0f8ff;
+}
+
+.table-note {
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* How to Join */
+.how-to-join {
+    padding: 50px 0;
+    background: white;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #e6eaf0;
+    border-radius: 14px;
+    padding: 16px 14px;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.step:hover {
+    transform: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-color: #d6deee;
+    background: #fafcff;
+}
+
+.step:focus-visible {
+    outline: 3px solid #003366;
+    outline-offset: 4px;
+    border-radius: 16px;
+}
+
+.step-number {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #0b3a7a 0%, #003366 100%);
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 auto 14px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 2px 10px rgba(0, 51, 102, 0.18);
+}
+
+.step-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.step-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.98rem;
+}
+
+/* Important Notes */
+.important-notes {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.note-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.card-click-hint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #003366;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.note-card:hover .card-click-hint {
+    opacity: 1;
+}
+
+.card-click-hint i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.note-card:hover .card-click-hint i {
+    transform: translateX(3px);
+}
+
+/* Always show hint on steps with enhanced style */
+.step .card-click-hint {
+    opacity: 1;
+    font-size: 0.88rem;
+    font-weight: 600;
+    background: #f0f5ff;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    transition: background 0.3s ease, opacity 0.3s ease;
+}
+.step .card-click-hint i {
+    font-size: 0.9rem;
+    animation: nudgeRight 1.2s ease-in-out infinite;
+}
+.step:hover .card-click-hint i {
+    transform: translateX(3px);
+}
+
+@keyframes nudgeRight {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); }
+}
+
+.note-card.warning {
+    border-left-color: #003366;
+}
+
+.note-card.info {
+    border-left-color: #003366;
+}
+
+.note-card.alert {
+    border-left-color: #003366;
+}
+
+.note-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    font-size: 32px;
+    color: #003366;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.note-card.warning .note-icon {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.note-card.info .note-icon {
+    background: #e3f0fa;
+    color: #003366;
+}
+
+.note-card.alert .note-icon {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.note-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.note-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.96rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.modal-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close:hover {
+    color: #000;
+    background: #f0f0f0;
+}
+
+.modal-body {
+    padding: 30px 25px 25px 60px;
+    line-height: 1.6;
+}
+
+.modal-body h3 {
+    color: #003366;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.modal-body p {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.modal-body ul, .modal-body ol {
+    margin: 15px 0;
+    padding-left: 60px;
+    list-style-type: decimal !important;
+    list-style-position: outside !important;
+    counter-reset: item;
+}
+
+.modal-body li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+    padding-left: 10px;
+    position: relative;
+    display: list-item !important;
+    list-style: decimal outside !important;
+}
+
+.modal-body .highlight {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #003366;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.modal-body .warning-box {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.modal-body .info-box {
+    background: #e3f0fa;
+    border: 1px solid #bee5eb;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* Contact & Download */
+.contact-download {
+    padding: 50px 0;
+    background: #222;
+    color: white;
+}
+
+.contact-download .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+.contact-item i {
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #003366;
+}
+
+.download-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #003366;
+}
+
+.download-btn:hover {
+    background: #003366;
+    color: white;
+    border-color: #003366;
+    transform: translateY(-2px);
+}
+
+.download-btn i {
+    font-size: 2rem;
+}
+
+.download-text {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+}
+
+.store-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+}
+
+.download-btn:hover .download-text {
+    color: #ccc;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: #ccc;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-download .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .notes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-title {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .table-container {
+        padding: 20px;
+    }
+    
+    .benefits-table th,
+    .benefits-table td {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 8px;
+    }
+    .header {
+        padding: 12px 0;
+    }
+    .main-title {
+        font-size: 1rem;
+    }
+    .hero {
+        padding: 36px 0;
+    }
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .btn, .download-btn {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+        min-width: 120px;
+    }
+    .hero-image img {
+        border-radius: 8px;
+        max-height: 180px;
+        object-fit: cover;
+    }
+    .service-overview, .vehicle-benefits, .how-to-join, .important-notes, .contact-download {
+        padding: 40px 0;
+    }
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .service-cards, .steps-container, .notes-grid {
+        gap: 16px;
+        margin-top: 24px;
+    }
+    .service-card, .note-card, .step {
+        padding: 16px 8px;
+        border-radius: 10px;
+    }
+    .card-icon, .note-icon, .step-number {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+    .benefits-table th, .benefits-table td {
+        padding: 8px 4px;
+        font-size: 0.85rem;
+    }
+    .modal-content {
+        width: 98%;
+        max-width: 98vw;
+        padding: 0;
+        border-radius: 10px;
+    }
+    .modal-header, .modal-body {
+        padding: 16px 10px 10px 10px;
+    }
+    .modal-header h2 {
+        font-size: 1.1rem;
+    }
+    .close {
+        font-size: 22px;
+        width: 28px;
+        height: 28px;
+    }
+    .modal-body {
+        font-size: 0.95rem;
+    }
+    .download-section h3, .contact-info h2 {
+        font-size: 1.1rem;
+    }
+    .footer {
+        padding: 18px 0;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.97rem;
+    }
+    .main-title {
+        font-size: 1.1rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .btn, .download-btn {
+        font-size: 0.95rem;
+    }
+    .benefit-main, .benefit-period, .service-card, .note-card, .step, .other-service-title {
+        font-size: 0.97rem;
+    }
+    .modal-body {
+        font-size: 0.95rem;
+    }
+    .footer {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 0.93rem;
+    }
+    .main-title {
+        font-size: 0.95rem;
+    }
+    .section-title {
+        font-size: 1.1rem;
+    }
+    .btn, .download-btn {
+        font-size: 0.9rem;
+    }
+    .benefit-main, .benefit-period, .service-card, .note-card, .step, .other-service-title {
+        font-size: 0.93rem;
+    }
+    .modal-body {
+        font-size: 0.9rem;
+    }
+    .footer {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 0.89rem;
+    }
+    .main-title {
+        font-size: 0.85rem;
+    }
+    .section-title {
+        font-size: 1rem;
+    }
+    .btn, .download-btn {
+        font-size: 0.85rem;
+    }
+    .benefit-main, .benefit-period, .service-card, .note-card, .step, .other-service-title {
+        font-size: 0.89rem;
+    }
+    .modal-body {
+        font-size: 0.85rem;
+    }
+    .footer {
+        font-size: 0.65rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced Responsive Design for Different Device Sizes */
+/* iPhone SE, 12 mini, Galaxy S21 등 작은 화면 */
+@media (max-width: 375px) {
+    body {
+        font-size: 0.85rem;
+    }
+    
+    .container {
+        padding: 0 12px;
+    }
+    
+    .header {
+        padding: 10px 0;
+    }
+    
+    .main-title {
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 30px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    
+    .hero-content p {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+        min-width: 100px;
+    }
+    
+    .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .service-cards, .steps-container, .notes-grid {
+        gap: 12px;
+        margin-top: 20px;
+    }
+    
+    .service-card, .note-card, .step {
+        padding: 12px 8px;
+        border-radius: 8px;
+    }
+    
+    .card-icon, .note-icon, .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+    
+    .step-number {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+    
+    .step-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .step-content p {
+        font-size: 0.9rem;
+    }
+    
+    .service-card h3, .note-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .service-card p, .note-card p {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+    
+    .benefit-cards {
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .benefit-card {
+        padding: 12px 6px;
+        min-width: 120px;
+        max-width: 45vw;
+    }
+    
+    .benefit-icon {
+        font-size: 1.8rem;
+        margin-bottom: 6px;
+    }
+    
+    .benefit-model {
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+    
+    .benefit-main {
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+    
+    .benefit-period {
+        font-size: 0.85rem;
+        padding: 2px 8px;
+    }
+    
+    .other-service-title {
+        padding: 12px 4vw 8px 4vw;
+        font-size: 1rem;
+    }
+    
+    .other-service-title i {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+    
+    .price-highlight {
+        padding: 12px;
+    }
+    
+    .price {
+        font-size: 1.4rem;
+    }
+    
+    .price-note {
+        font-size: 0.8rem;
+    }
+    
+    .modal-content {
+        width: 98%;
+        max-width: 98vw;
+        margin: 2% auto;
+    }
+    
+    .modal-header, .modal-body {
+        padding: 12px 8px 8px 8px;
+    }
+    
+    .modal-header h2 {
+        font-size: 1rem;
+    }
+    
+    .close {
+        font-size: 20px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .footer {
+        padding: 15px 0;
+        font-size: 0.7rem;
+    }
+}
+
+/* iPhone 12/13/14 Pro Max, Galaxy Note 등 큰 모바일 */
+@media (min-width: 376px) and (max-width: 428px) {
+    body {
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-card h3, .note-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .step-content h3 {
+        font-size: 1.15rem;
+    }
+    
+    .benefit-card {
+        min-width: 140px;
+        max-width: 48vw;
+    }
+    
+    .other-service-title {
+        padding: 16px 4vw 10px 4vw;
+        font-size: 1.1rem;
+    }
+}
+
+/* Galaxy Fold 등 초대형 모바일 */
+@media (min-width: 429px) and (max-width: 500px) {
+    body {
+        font-size: 0.95rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .service-card h3, .note-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .step-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .benefit-card {
+        min-width: 150px;
+        max-width: 45vw;
+    }
+}
+
+/* 태블릿 세로 모드 */
+@media (min-width: 501px) and (max-width: 768px) and (orientation: portrait) {
+    body {
+        font-size: 0.97rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .service-card h3, .note-card h3 {
+        font-size: 1.35rem;
+    }
+    
+    .step-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .benefit-card {
+        min-width: 160px;
+        max-width: 42vw;
+    }
+}
+
+/* 태블릿 가로 모드 */
+@media (min-width: 501px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        font-size: 0.95rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .service-card h3, .note-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .step-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .benefit-card {
+        min-width: 140px;
+        max-width: 40vw;
+    }
+}
+
+/* 고해상도 디스플레이 (Retina, 4K 등) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-image img,
+    .service-card img,
+    .step img,
+    .note-card img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* 다크 모드 지원 */
+@media (prefers-color-scheme: dark) {
+    .step {
+        background: #1a1a1a;
+        border-color: #333;
+        color: #fff;
+    }
+    
+    .step:hover {
+        background: #2a2a2a;
+        border-color: #444;
+    }
+    
+    .step-content h3 {
+        color: #fff;
+    }
+    
+    .step-content p {
+        color: #ccc;
+    }
+}
+
+/* 접근성 향상 (고대비 모드) */
+@media (prefers-contrast: high) {
+    .step {
+        border: 2px solid #000;
+    }
+    
+    .step-number {
+        border: 2px solid #fff;
+    }
+    
+    .card-click-hint {
+        background: #000;
+        color: #fff;
+    }
+}
+
+/* 모션 감소 설정 사용자 */
+@media (prefers-reduced-motion: reduce) {
+    .step:hover {
+        transform: none;
+    }
+    
+    .step-number {
+        animation: none;
+    }
+    
+    .card-click-hint i {
+        animation: none;
+    }
+    
+    .service-card,
+    .step,
+    .note-card {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* 인쇄용 스타일 */
+@media print {
+    .step {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        border: 1px solid #000;
+        background: #fff;
+        color: #000;
+    }
+    
+    .step-number {
+        background: #000 !important;
+        color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .card-click-hint {
+        display: none;
+    }
+}
+
+/* Loading Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-card,
+.step,
+.note-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover Effects */
+.service-card:hover .card-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.step:hover .step-number {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* App Style How to Join */
+.app-style {
+    background: #fff;
+    padding: 60px 0;
+}
+.app-step-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 32px 20px 28px 20px;
+    gap: 24px;
+}
+.app-step-image img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    margin-bottom: 0;
+}
+.app-step-desc {
+    text-align: center;
+}
+.app-step-desc h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+.app-step-desc p {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 22px;
+}
+.app-btn-primary {
+    background: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    padding: 14px 0;
+    width: 100%;
+    max-width: 260px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+}
+.app-btn-primary:hover {
+    background: #002244;
+}
+@media (max-width: 600px) {
+    .app-step-card {
+        padding: 18px 6px 16px 6px;
+        max-width: 98vw;
+    }
+    .app-step-image img {
+        max-width: 98vw;
+    }
+}
+
+/* Vehicle Benefits Card Style */
+.benefit-cards {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.benefit-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;
+    max-width: 220px;
+    padding: 28px 18px 22px 18px;
+    gap: 12px;
+    border: 1.5px solid #e5e8ec;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+.benefit-card:hover {
+    box-shadow: 0 8px 32px rgba(0,51,102,0.10);
+    border: 1.5px solid #003366;
+}
+.benefit-icon {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 8px;
+}
+.benefit-model {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 2px;
+}
+.benefit-main {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2px;
+}
+.benefit-period {
+    font-size: 0.98rem;
+    color: #666;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 3px 14px;
+    margin-top: auto;
+    align-self: stretch;
+    text-align: center;
+}
+@media (max-width: 900px) {
+    .benefit-cards {
+        gap: 18px;
+    }
+    .benefit-card {
+        min-width: 140px;
+        max-width: 48vw;
+        padding: 18px 6px 14px 6px;
+    }
+}
+@media (max-width: 600px) {
+    .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+    .benefit-card {
+        width: 98vw;
+        max-width: 98vw;
+        min-width: 0;
+        padding: 14px 4vw 10px 4vw;
+    }
+}
+
+/* PnC & Coupon Guide Section */
+.pnc-join-guide, .coupon-purchase-guide {
+    padding: 100px 0;
+    background: #fff;
+}
+@media (max-width: 600px) {
+    .pnc-join-guide, .coupon-purchase-guide {
+        padding: 40px 0;
+    }
+}
+
+/* 기타 서비스 안내 섹션 */
+.other-services-guide {
+    padding: 50px 0;
+    background: #fff;
+}
+.other-services-row {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.other-service-title {
+    flex: 1 1 220px;
+    min-width: 180px;
+    max-width: 320px;
+    cursor: pointer;
+    text-align: center;
+    padding: 22px 16px 8px 16px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #003366;
+    transition: box-shadow 0.2s, transform 0.2s;
+    margin-bottom: 0;
+}
+.other-service-title i {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 4px;
+    color: #003366;
+}
+.other-service-title:hover {
+    box-shadow: 0 8px 32px rgba(0,51,102,0.10);
+    transform: translateY(-4px) scale(1.03);
+}
+@media (max-width: 900px) {
+    .other-services-row {
+        gap: 18px;
+    }
+    .other-service-title {
+        min-width: 140px;
+        max-width: 48vw;
+        padding: 18px 6px 14px 6px;
+        font-size: 1.08rem;
+    }
+}
+@media (max-width: 600px) {
+    .other-services-guide {
+        padding: 40px 0;
+    }
+    .other-services-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+    .other-service-title {
+        width: 98vw;
+        max-width: 98vw;
+        min-width: 0;
+        padding: 14px 4vw 10px 4vw;
+        font-size: 1.05rem;
+    }
+} 

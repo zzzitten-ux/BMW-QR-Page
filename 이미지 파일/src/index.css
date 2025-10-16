@@ -1,0 +1,332 @@
+:root {
+  --bmw-blue: #0066b1;
+  --bmw-dark-blue: #004d8c;
+  --bmw-light-blue: #e6f3ff;
+  --bmw-gray: #666666;
+  --bmw-light-gray: #f5f5f5;
+  --bmw-white: #ffffff;
+  --bmw-black: #000000;
+  --bmw-success: #28a745;
+  --bmw-error: #dc3545;
+  --bmw-warning: #ffc107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, var(--bmw-light-blue) 0%, var(--bmw-white) 100%);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  background: var(--bmw-white);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 16px;
+  border-bottom: 1px solid var(--bmw-light-gray);
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--bmw-black);
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--bmw-gray);
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.close-button:hover {
+  background-color: var(--bmw-light-gray);
+  color: var(--bmw-black);
+}
+
+.modal-content {
+  padding: 24px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+
+.step-circle.active {
+  background-color: var(--bmw-blue);
+  color: var(--bmw-white);
+}
+
+.step-circle.completed {
+  background-color: var(--bmw-success);
+  color: var(--bmw-white);
+}
+
+.step-circle.inactive {
+  background-color: var(--bmw-light-gray);
+  color: var(--bmw-gray);
+}
+
+.step-arrow {
+  color: var(--bmw-blue);
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--bmw-black);
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid var(--bmw-light-gray);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--bmw-blue);
+  box-shadow: 0 0 0 3px rgba(0, 102, 177, 0.1);
+}
+
+.form-input::placeholder {
+  color: var(--bmw-gray);
+}
+
+.button {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: var(--bmw-blue);
+  color: var(--bmw-white);
+}
+
+.button-primary:hover {
+  background-color: var(--bmw-dark-blue);
+}
+
+.button-secondary {
+  background-color: var(--bmw-light-gray);
+  color: var(--bmw-black);
+}
+
+.button-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.button-group .button {
+  flex: 1;
+}
+
+.vehicle-preview {
+  text-align: center;
+  padding: 24px;
+  background-color: var(--bmw-light-gray);
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.vehicle-image {
+  width: 200px;
+  height: 120px;
+  background-color: var(--bmw-white);
+  border-radius: 8px;
+  margin: 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: var(--bmw-blue);
+}
+
+.vehicle-model {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bmw-black);
+  margin-bottom: 8px;
+}
+
+.info-section {
+  background-color: var(--bmw-light-blue);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.info-text {
+  color: var(--bmw-black);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.example-box {
+  background-color: var(--bmw-white);
+  border: 1px solid var(--bmw-light-gray);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 14px;
+  color: var(--bmw-gray);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--bmw-light-gray);
+  border-top: 2px solid var(--bmw-blue);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: var(--bmw-error);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.success-message {
+  color: var(--bmw-success);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    margin: 20px;
+    max-height: calc(100vh - 40px);
+  }
+  
+  .modal-header {
+    padding: 16px 16px 12px;
+  }
+  
+  .modal-content {
+    padding: 16px;
+  }
+  
+  .modal-title {
+    font-size: 20px;
+  }
+  
+  .steps-container {
+    margin-bottom: 24px;
+  }
+  
+  .step-circle {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .button {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+}
+

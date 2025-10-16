@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW 전기차 충전 서비스</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="이미지 파일/1. BMW 로고.png" alt="BMW" class="bmw-logo">
+            </div>
+            <h1 class="main-title">BMW 전기차 충전 서비스</h1>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>BMW 전기차와 함께하는<br>스마트한 충전 경험</h2>
+                <p>BMW Charging APP으로 편리하고 경제적인<br>전기차 충전 서비스를 경험하세요</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        BMW Charging App 다운로드
+                    </a>
+                    <a href="#service-info" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        서비스 안내
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="soul-of-bmw-campaign-update_3to1.webp" alt="BMW 전기차">
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section id="service-info" class="service-overview">
+        <div class="container">
+            <h2 class="section-title">BMW 전기차 고객을 위한<br>전용 충전 프로그램</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>전기차 충전 프로그램</h3>
+                    <p>차종별 맞춤 충전 크레딧 또는 홈충전기 설치 지원</p>
+                    <ul>
+                        <li>순수 전기차: 무제한 크레딧 또는 홈충전기</li>
+                        <li>플러그인 하이브리드: 250,000 크레딧</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>로밍 충전요금 할인</h3>
+                    <p>민간 로밍 제휴사 충전기 이용 시 특별 요금 적용<br>
+                        <a href="#" data-modal="roaming-detail" style="color:#003366;text-decoration:underline;font-weight:500;">로밍 충전요금 상세 안내</a>
+                    </p>
+                    <div class="price-highlight">
+                        <span class="price">315원/kWh</span>
+                        <span class="price-note">단일 요금 적용</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>전용 디자인 충전카드</h3>
+                    <p>키링 타입과 일반 타입 2종류 제공</p>
+                    <ul>
+                        <li>키링형: 최초 1회만 발급</li>
+                        <li>일반형: 추가 등록 가능</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Benefits -->
+    <section class="vehicle-benefits">
+        <div class="container">
+            <h2 class="section-title">차종별 충전 혜택</h2>
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-car-side"></i></div>
+                    <div class="benefit-model">i7</div>
+                    <div class="benefit-main">무제한 크레딧<br>또는 홈충전기</div>
+                    <div class="benefit-period">유효기간: 1년</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-car-side"></i></div>
+                    <div class="benefit-model">iX, i5</div>
+                    <div class="benefit-main">무제한 크레딧<br>또는 홈충전기</div>
+                    <div class="benefit-period">유효기간: 1년</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-car"></i></div>
+                    <div class="benefit-model">i4, iX3 등</div>
+                    <div class="benefit-main">500,000 크레딧</div>
+                    <div class="benefit-period">유효기간: 3년</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-car"></i></div>
+                    <div class="benefit-model">530e, X5 등</div>
+                    <div class="benefit-main">250,000 크레딧</div>
+                    <div class="benefit-period">유효기간: 3년</div>
+                </div>
+            </div>
+            <p class="table-note">* 차량모델 및 기간에 따라 지급 혜택이 변경될 수 있습니다.</p>
+        </div>
+    </section>
+
+    <!-- How to Join -->
+    <section class="how-to-join">
+        <div class="container">
+            <h2 class="section-title">회원가입 방법</h2>
+            
+            <div class="steps-container">
+                <div class="step" data-modal="join-step-1" role="button" tabindex="0" aria-label="BMW Charging App 설치 자세히 보기">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>BMW Charging App 설치</h3>
+                        <p>App Store 또는 Google Play에서 BMW Charging App을 다운로드하세요</p>
+                        
+                    </div>
+                </div>
+                <div class="step" data-modal="join-step-2" role="button" tabindex="0" aria-label="차량 정보 입력 자세히 보기">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>차량 정보 입력</h3>
+                        <p>차량번호 및 소유자명을 정확하게 입력해주세요.</p>
+                        
+                    </div>
+                </div>
+                <div class="step" data-modal="join-step-3" role="button" tabindex="0" aria-label="충전카드 등록 자세히 보기">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>충전카드 등록</h3>
+                        <p>회원가입 시 충전카드 등록은 필수입니다</p>
+                        
+                    </div>
+                </div>
+                <div class="step" data-modal="join-step-4" role="button" tabindex="0" aria-label="승인 완료 자세히 보기">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>승인 완료</h3>
+                        <p>차량정보 및 회원카드 등록 후 1일 이내 승인 완료됩니다 (영업일 기준)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기타 서비스 안내 -->
+    <section class="other-services-guide">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom:36px;">기타 서비스 안내</h2>
+            <div class="other-services-row" style="display:flex;gap:32px;justify-content:center;flex-wrap:wrap;">
+                <div class="other-service-title" data-modal="pnc-detail" style="flex:1 1 220px;min-width:180px;max-width:320px;cursor:pointer;text-align:center;padding:32px 18px 28px 18px;background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.07);font-size:1.25rem;font-weight:700;color:#003366;transition:box-shadow 0.2s,transform 0.2s;">
+                    <i class="fas fa-plug" style="font-size:2rem;display:block;margin-bottom:12px;"></i>
+                    PnC(Plug & Charge) 가입 방법
+                </div>
+                <div class="other-service-title" data-modal="coupon-detail" style="flex:1 1 220px;min-width:180px;max-width:320px;cursor:pointer;text-align:center;padding:32px 18px 28px 18px;background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.07);font-size:1.25rem;font-weight:700;color:#003366;transition:box-shadow 0.2s,transform 0.2s;">
+                    <i class="fas fa-ticket-alt" style="font-size:2rem;display:block;margin-bottom:12px;"></i>
+                    쿠폰 구매 안내
+                </div>
+                <div class="other-service-title" data-modal="charging-station-detail" style="flex:1 1 220px;min-width:180px;max-width:320px;cursor:pointer;text-align:center;padding:32px 18px 28px 18px;background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.07);font-size:1.25rem;font-weight:700;color:#003366;transition:box-shadow 0.2s,transform 0.2s;">
+                    <i class="fas fa-charging-station" style="font-size:2rem;display:block;margin-bottom:12px;"></i>
+                    BMW 차징스테이션 소개
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Notes -->
+    <section class="important-notes">
+        <div class="container">
+            <h2 class="section-title">중요 안내사항</h2>
+            <div class="notes-grid">
+                <div class="note-card warning" data-modal="registration-deadline">
+                    <div class="note-icon">
+                        <i class="fas fa-circle-exclamation"></i>
+                    </div>
+                    <h3>등록 기한</h3>
+                    <p>차량 출고일 기준 1년 이내 등록 필수<br>(기한 내 미가입 시, 혜택 제공 불가)</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>자세히 보기</span>
+                    </div>
+                </div>
+                <div class="note-card info" data-modal="new-car-benefits">
+                    <div class="note-icon">
+                        <i class="fas fa-circle-info"></i>
+                    </div>
+                    <h3>신차구매혜택</h3>
+                    <p>차량정보 확인 후 크레딧 지급<br>i7: 2022.12.16 이후 등록<br>BMW xEV: 2023.01.01 이후 등록</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>자세히 보기</span>
+                    </div>
+                </div>
+                <div class="note-card alert" data-modal="usage-restrictions">
+                    <div class="note-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>사용 제한</h3>
+                    <p>구매하신 신차에만 사용 가능<br>동시 충전 등 비정상 사용 시 서비스 제재</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>자세히 보기</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Download -->
+    <section id="download" class="contact-download">
+        <div class="container">
+            <div class="contact-info">
+                <h2>BMW Charging 고객센터</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>1600-4087</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24시간 운영</span>
+                    </div>
+                </div>
+            </div>
+            <div class="download-section">
+                <h3>BMW Charging App 다운로드</h3>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span class="download-text">Download on the</span>
+                            <span class="store-name">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span class="download-text">GET IT ON</span>
+                            <span class="store-name">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BMW Korea. All rights reserved.</p>
+            <p>본 혜택은 BMW 신규 구매 차량에 제공되는 혜택으로 계정, 충전카드 및 포인트 등 혜택을 서비스대상 차량 외 충전, 양도, 대여, 재판매가 불가합니다.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
