@@ -10,21 +10,21 @@ const modalContent = {
         title: '등록 기한 안내',
         content: `
             <h3><b>차량 출고일 기준 1년 이내 등록 필수</b></h3>
-            <p>BMW 전기차 충전 서비스 혜택을 받으시려면 <b>반드시 차량 출고일 기준 1년 이내</b>에 BMW Charging App을 통해 회원가입을 완료하셔야 합니다.</p>
+            <p>BMW 전기차 충전 프로모션 혜택을 받기 위해서는<br>차량 출고일 기준 1년 이내에 BMW Charging App을 통해 회원가입 및 차량 등록을 완료해야 합니다.</p>
             
             <div class="warning-box">
-                <strong>중요:</strong> <b>기한 내 미가입 시, 모든 혜택 제공이 불가능합니다.</b>
+                <strong>⚠️ 중요 :</strong> 등록 기한 내 미가입 시, 모든 서비스 혜택 제공이 불가합니다.
             </div>
             
-            <h3>등록 기한 확인 방법</h3>
+            <h3>🔹 등록 기한 확인 방법</h3>
             <ol>
-                <li>차량 출고일은 <b>차량등록증</b>에서 확인 가능합니다</li>
-                <li><b>BMW 딜러</b>를 통해 정확한 출고일을 문의하실 수 있습니다</li>
-                <li>등록 기한이 임박한 경우 <b>BMW Charging 고객센터(1600-4087)</b>로 연락하세요</li>
+                <li>차량 출고일은 <b>차량등록증</b>에서 확인할 수 있습니다</li>
+                <li><b>BMW 딜러</b>를 통해 정확한 출고일을 문의하실 수도 있습니다</li>
             </ol>
             
             <div class="highlight">
-                <b>차량 구매 후 가능한 빨리 BMW Charging App을 설치하고 회원가입을 완료하시는 것을 권장합니다.</b>
+                <strong>💡 안내:</strong><br>
+                차량 구매 후 가능한 한 빨리 BMW Charging App을 설치하고 회원가입 및 차량 등록을 완료하시길 권장드립니다.
             </div>
         `
     },
@@ -32,28 +32,29 @@ const modalContent = {
         title: '신차구매혜택 상세 안내',
         content: `
             <h3><b>차량정보 확인 후 크레딧 지급</b></h3>
-            <p>BMW 전기차 충전 서비스 혜택은 <b>차량정보 확인 후 자동으로 지급</b>됩니다. 차량정보 인증이 완료되면 해당 차종에 맞는 크레딧이 자동으로 적립됩니다.</p>
+            <p>BMW 전기차 충전 프로모션 혜택은 <b>차량정보 확인 후 자동으로 지급됩니다.</b><br>차량정보 인증이 완료되면 해당 차종에 맞는 크레딧이 자동으로 적립됩니다.</p>
             
-            <h3>차종별 적용 기준</h3>
+            <h3>🔹 차종별 적용 기준</h3>
             <ol>
                 <li><strong>i7:</strong> <b>2022년 12월 16일 이후</b> 등록 차량</li>
                 <li><strong>BMW xEV:</strong> <b>2023년 1월 1일 이후</b> 등록 차량</li>
             </ol>
             
             <div class="info-box">
-                <b>참고:</b> 이전 등록 차량은 기존 혜택이 유지됩니다.
+                이전 등록 차량은 기존 혜택이 유지됩니다.
             </div>
             
-            <h3>크레딧 지급 과정</h3>
+            <h3>🔹 크레딧 지급 과정</h3>
             <ol>
-                <li><b>BMW Charging App 회원가입 완료</b></li>
-                <li><b>차량정보 입력 및 인증</b></li>
-                <li><b>차지비 고객센터에서 차량정보 확인 (1-2일 소요)</b></li>
-                <li><b>차종별 크레딧 자동 지급</b></li>
+                <li>BMW Charging App 회원가입 완료</li>
+                <li>차량정보 입력 및 인증</li>
+                <li>등록된 차량정보 확인 (영업일 기준 1~2일 소요)</li>
+                <li>차종별 크레딧 자동 지급</li>
             </ol>
             
             <div class="highlight">
-                <b>BMW Charging App > MY차지비 > 충전크레딧</b>에서 지급된 크레딧을 확인하실 수 있습니다.
+                <strong>💡 안내:</strong><br>
+                <b>BMW Charging App > MY차지비 > 크레딧</b>에서 지급된 크레딧을 확인하실 수 있습니다.
             </div>
         `
     },
@@ -61,31 +62,32 @@ const modalContent = {
         title: '사용 제한 및 주의사항',
         content: `
             <h3><b>구매하신 신차에만 사용 가능</b></h3>
-            <p>BMW 전기차 충전 서비스 혜택은 <b>구매하신 신차에만 사용</b>할 수 있습니다. 다른 차량이나 타인에게 양도하는 것은 <b>불가능</b>합니다.</p>
+            <p>BMW 전기차 충전 프로모션 혜택은 <b>구매하신 신차에만 사용</b>할 수 있습니다.<br>다른 차량이나 타인에게 양도하는 것은 <b>불가능</b>합니다.</p>
             
-            <h3>금지되는 사용 행위</h3>
+            <h3>🔹 금지되는 사용 행위</h3>
             <ol>
-                <li><strong>동시 충전:</strong> <b>여러 차량을 동시에 충전하는 행위</b></li>
-                <li><strong>연속 충전:</strong> <b>비정상적으로 연속적인 충전 행위</b></li>
-                <li><strong>원거리 충전:</strong> <b>차량과 거리가 먼 충전기에서의 충전</b></li>
-                <li><strong>타인 양도:</strong> <b>충전카드나 계정을 타인에게 양도하는 행위</b></li>
-                <li><strong>상업적 이용:</strong> <b>상업적 목적으로 충전 서비스를 이용하는 행위</b></li>
+                <li><strong>동시 충전:</strong> 여러 차량을 동시에 충전하는 행위</li>
+                <li><strong>연속 충전:</strong> 비정상적으로 연속적인 충전 행위</li>
+                <li><strong>원거리 충전:</strong> 차량과 거리가 먼 충전기에서의 충전</li>
+                <li><strong>타인 양도:</strong> 충전카드나 계정을 타인에게 양도하는 행위</li>
+                <li><strong>상업적 이용:</strong> 상업적 목적으로 충전 서비스를 이용하는 행위</li>
             </ol>
             
             <div class="warning-box">
-                <b>서비스 제재:</b> 위반 시 <b>충전 프로그램 회수, 계정 영구정지</b> 등의 제재가 적용될 수 있습니다.
+                <strong>⚠️ 서비스 제재:</strong> 위반 시 충전 프로그램 회수, 계정 영구정지 등의 제재가 적용될 수 있습니다.
             </div>
             
-            <h3>정상 사용 가이드</h3>
+            <h3>🔹 정상 사용 가이드</h3>
             <ol>
-                <li><b>본인 소유 차량에서만</b> 충전 이용</li>
-                <li><b>충전 완료 후 즉시</b> 차량 이동</li>
-                <li><b>충전카드 분실 시 즉시</b> 신고</li>
-                <li><b>정기적인 충전 패턴</b> 유지</li>
+                <li>본인 소유 차량에서만 충전 이용</li>
+                <li>충전 완료 후 즉시 차량 이동</li>
+                <li>충전카드 분실 시 즉시 신고</li>
+                <li>정기적인 충전 패턴 유지</li>
             </ol>
             
             <div class="highlight">
-                <b>보안:</b> 충전카드는 <b>개인정보와 연결</b>되어 있으므로 안전하게 보관하시기 바랍니다.
+                <strong>💡 안내:</strong><br>
+                충전카드는 개인정보와 연결되어 있으므로 안전하게 보관하시기 바랍니다.
             </div>
         `
     },
@@ -203,33 +205,53 @@ const modalContent = {
     'pnc-detail': {
         title: 'PnC(Plug & Charge) 가입 상세 안내',
         content: `
-            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;">
-                <img src="이미지 파일/bmw 앱 메인 이미지.jpg" alt="앱 메인" style="width:100%;max-width:110px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-                <img src="이미지 파일/bmw 앱 화면1.png" alt="PnC 메뉴" style="width:100%;max-width:110px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-            </div>
-            <ol style="font-size:1.05rem;line-height:2;">
-                <li><b>BMW Charging App에 로그인</b> 후 차량 이미지를 클릭</li>
-                <li><b>PnC 서비스 이용 가능 여부</b> 확인</li>
-                <li><b>PnC 서비스 신청 및 약관</b> 확인</li>
+            <p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;">BMW Charging App에 로그인 후, 내 차량 이미지 선택 →<br>PnC 서비스 이용 가능 여부를 확인하고 간단히 신청할 수 있습니다.</p>
+            
+            <ol style="font-size:1.05rem;line-height:2.2;margin-bottom:20px;">
+                <li><b>BMW Charging App 로그인 후 차량 이미지 선택</b></li>
+                <li><b>PnC 서비스 가능 여부 확인</b></li>
+                <li><b>PnC 서비스 신청 및 약관 동의</b></li>
                 <li><b>PnC 서비스 계약 완료</b></li>
             </ol>
-            <div class="info-box" style="margin-top:12px;"><b>PnC는 지원 차량에 한해 제공</b>됩니다.<br>중고차량의 PnC 가입 방법은 <b>고객센터로 문의</b> 주세요.<br>자세한 내용은 <b>고객센터로 문의</b>하세요.</div>
+            
+            <div class="warning-box" style="margin-top:20px;">
+                <strong>⚠️ PnC는 지원 차량에 한해 제공됩니다.</strong><br>
+                중고차량의 경우, PnC 가입 절차가 다를 수 있으니 고객센터로 문의해주세요.
+            </div>
         `
     },
     'coupon-detail': {
         title: '쿠폰 구매 안내',
         content: `
-            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;">
-                <img src="이미지 파일/bmw 앱 로그인 화면.png" alt="앱 로그인" style="width:100%;max-width:110px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-                <img src="이미지 파일/bmw 앱 화면1.png" alt="쿠폰 메뉴" style="width:100%;max-width:110px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-            </div>
-            <ol style="font-size:1.05rem;line-height:2;">
-                <li><b>BMW Charging App에 로그인</b></li>
-                <li><b>MY차지비</b> &gt; <b>충전쿠폰</b> 메뉴 선택</li>
-                <li><b>원하는 쿠폰을 선택하고 결제 진행</b></li>
-                <li><b>구매한 쿠폰은 앱 내에서 바로 사용 가능</b>합니다</li>
+            <p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;">BMW Charging App에서 다양한 쿠폰을 구매하실 수 있습니다.</p>
+            
+            <ol style="font-size:1.05rem;line-height:2.2;margin-bottom:20px;">
+                <li><b>BMW Charging App 로그인</b></li>
+                <li><b>MY차지비 > 쿠폰 스토어 메뉴에서 구매하기 선택</b></li>
+                <li><b>원하는 쿠폰을 선택하고 크레딧으로 결제 진행</b></li>
+                <li><b>구매한 쿠폰은 앱 내 '쿠폰 보관함'에서 확인 가능합니다</b></li>
             </ol>
-            <div class="info-box" style="margin-top:12px;"><b>쿠폰 종류 및 가격은 앱 내에서 확인</b>할 수 있습니다. 자세한 내용은 <b>고객센터로 문의</b>하세요.</div>
+            
+            <div class="warning-box" style="margin-top:20px;">
+                <strong>⚠️ 쿠폰 종류 및 상세 내역은 쿠폰 스토어에서 확인해주세요.</strong><br>
+                <strong>차량 유형에 따라 구매 가능한 쿠폰의 종류가 달라질 수 있습니다.</strong>
+            </div>
+            
+            <div class="info-box" style="margin-top:25px;padding:15px;">
+                <p style="font-size:0.95rem;margin-bottom:12px;color:#666;"><em>※ 쿠폰 종류</em></p>
+                
+                <div style="margin-bottom:10px;font-size:0.9rem;">
+                    <span style="color:#003366;font-weight:500;">GS칼텍스 세차쿠폰</span> - 제휴 세차소에서 이용 가능한 세차 전용 쿠폰
+                </div>
+                
+                <div style="margin-bottom:10px;font-size:0.9rem;">
+                    <span style="color:#003366;font-weight:500;">GS칼텍스 주유쿠폰</span> - 전국 GS칼텍스 주유소에서 사용 가능한 주유 전용 쿠폰
+                </div>
+                
+                <div style="font-size:0.9rem;">
+                    <span style="color:#003366;font-weight:500;">카카오T 쿠폰</span> - 카카오T 앱 내 택시, 대리, 주차 등 서비스 이용 시 사용 가능
+                </div>
+            </div>
         `
     },
     'charging-station-detail': {
@@ -252,13 +274,16 @@ const modalContent = {
                 <li>24시간 이용 가능한 편리한 서비스</li>
             </ul>
             <h3>이용 방법</h3>
-            <ol style="font-size:1.05rem;line-height:2;">
+            <ol style="font-size:1.05rem;line-height:2.2;margin-bottom:20px;">
                 <li>BMW Charging App에서 주변 충전기 검색</li>
                 <li>원하는 BMW 차징스테이션 선택</li>
-                <li>충전기에서 BMW Charging App으로 결제</li>
-                <li>충전 완료 후 즉시 이용 가능</li>
+                <li>충전기 번호 확인 후, BMW Charging 앱에서 결제 및 충전 시작</li>
+                <li>충전 완료 후 앱에서 이용 내역 확인 가능</li>
             </ol>
-            <div class="info-box" style="margin-top:12px;">BMW 차징스테이션 위치 및 상세 정보는 BMW Charging App에서 확인하실 수 있습니다.<br>자세한 내용은 고객센터로 문의하세요.</div>
+            
+            <div class="warning-box" style="margin-top:20px;">
+                <strong>⚠️ BMW 차징스테이션의 위치 및 상세 정보는<br>&nbsp;&nbsp;&nbsp;&nbsp;BMW Charging App에서 확인하실 수 있습니다.</strong>
+            </div>
         `
     }
 };

@@ -268,6 +268,40 @@ body {
     color: #666;
 }
 
+/* Card Images Background - Only for charging card service card */
+.service-card:has(.card-icon i.fa-credit-card) {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:has(.card-icon i.fa-credit-card)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        url('이미지 파일/참고. 충전카드(카드형).png'),
+        url('이미지 파일/참고. 충전카드(I7 카드형).png'),
+        url('이미지 파일/참고. 충전카드(키링형).png');
+    background-size: 180px auto, 180px auto, 120px auto;
+    background-position: calc(100% - 30px) 15%, calc(100% - 30px) 60%, calc(100% - 30px) 85%;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+    filter: contrast(1.2) brightness(1.1);
+}
+
+.service-card:has(.card-icon i.fa-credit-card) .card-icon,
+.service-card:has(.card-icon i.fa-credit-card) h3,
+.service-card:has(.card-icon i.fa-credit-card) p,
+.service-card:has(.card-icon i.fa-credit-card) ul {
+    position: relative;
+    z-index: 1;
+}
+
 /* Vehicle Benefits Table */
 .vehicle-benefits {
     padding: 50px 0;
@@ -1625,5 +1659,10 @@ html {
         min-width: 0;
         padding: 14px 4vw 10px 4vw;
         font-size: 1.05rem;
+    }
+    
+    .service-card:has(.card-icon i.fa-credit-card)::after {
+        background-size: 120px auto, 120px auto, 90px auto;
+        background-position: calc(100% - 15px) 10%, calc(100% - 15px) 60%, calc(100% - 15px) 90%;
     }
 } 
