@@ -10,7 +10,7 @@ const modalContent = {
         title: '등록 기한 안내',
         content: `
             <h3><b>차량 출고일 기준 1년 이내 등록 필수</b></h3>
-            <p>BMW 전기차 충전 프로모션 혜택을 받기 위해서는<br>차량 출고일 기준 1년 이내에 BMW Charging App을 통해 회원가입 및 차량 등록을 완료해야 합니다.</p>
+            <p style="font-size:0.9rem;line-height:1.8;margin-bottom:20px;">BMW 전기차 충전 프로모션 혜택을 받기 위해서는<br>차량 출고일 기준 1년 이내에 BMW Charging App을 통해 회원가입 및 차량 등록을 완료해야 합니다.</p>
             
             <div class="warning-box">
                 <strong>⚠️ 중요 :</strong> 등록 기한 내 미가입 시, 모든 서비스 혜택 제공이 불가합니다.
@@ -18,8 +18,8 @@ const modalContent = {
             
             <h3>🔹 등록 기한 확인 방법</h3>
             <ol>
-                <li>차량 출고일은 <b>차량등록증</b>에서 확인할 수 있습니다</li>
-                <li><b>BMW 딜러</b>를 통해 정확한 출고일을 문의하실 수도 있습니다</li>
+                <li>차량 출고일은 <b>차량등록증</b>에서 확인할 수 있습니다.</li>
+                <li><b>BMW 딜러</b>를 통해 정확한 출고일을 문의하실 수도 있습니다.</li>
             </ol>
             
             <div class="highlight">
@@ -32,7 +32,7 @@ const modalContent = {
         title: '신차구매혜택 상세 안내',
         content: `
             <h3><b>차량정보 확인 후 크레딧 지급</b></h3>
-            <p>BMW 전기차 충전 프로모션 혜택은 <b>차량정보 확인 후 자동으로 지급됩니다.</b><br>차량정보 인증이 완료되면 해당 차종에 맞는 크레딧이 자동으로 적립됩니다.</p>
+            <p style="font-size:0.9rem;line-height:1.8;margin-bottom:20px;">BMW 전기차 충전 프로모션 혜택은 <b>차량정보 확인 후 자동으로 지급됩니다.</b><br>차량정보 인증이 완료되면 해당 차종에 맞는 크레딧이 자동으로 적립됩니다.</p>
             
             <h3>🔹 차종별 적용 기준</h3>
             <ol>
@@ -59,7 +59,7 @@ const modalContent = {
         title: '사용 제한 및 주의사항',
         content: `
             <h3><b>구매하신 신차에만 사용 가능</b></h3>
-            <p>BMW 전기차 충전 프로모션 혜택은 <b>구매하신 신차에만 사용</b>할 수 있습니다.<br>다른 차량이나 타인에게 양도하는 것은 <b>불가능</b>합니다.</p>
+            <p style="font-size:0.9rem;line-height:1.8;margin-bottom:20px;">BMW 전기차 충전 프로모션 혜택은 <b>구매하신 신차에만 사용</b>할 수 있습니다.<br>다른 차량이나 타인에게 양도하는 것은 <b>불가능</b>합니다.</p>
             
             <h3>🔹 금지되는 사용 행위</h3>
             <ol>
@@ -157,10 +157,10 @@ const modalContent = {
         content: `
             <img src="이미지 파일/앱 이미지.png" alt="BMW Charging 앱 아이콘" style="width:72px;height:72px;display:block;margin:0 auto 16px;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
             <div style="display:flex;gap:12px;justify-content:center;margin-bottom:16px;flex-wrap:wrap;">
-              <a href="https://apps.apple.com/kr/app/bmw-charging/id6446106472" target="_blank" class="btn btn-primary" style="background:#003366;min-width:140px;margin-bottom:6px;">
+              <a href="https://apps.apple.com/kr/app/bmw-charging/id1439320862" target="_blank" class="btn btn-primary" style="background:#003366;min-width:140px;margin-bottom:6px;">
                 <i class="fab fa-apple"></i> iPhone 다운로드
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.chargev.bmw" target="_blank" class="btn btn-primary" style="background:#003366;min-width:140px;margin-bottom:6px;">
+              <a href="https://play.google.com/store/search?q=bmw+charging&c=apps&hl=ko" target="_blank" class="btn btn-primary" style="background:#003366;min-width:140px;margin-bottom:6px;">
                 <i class="fab fa-google-play"></i> Android 다운로드
               </a>
             </div>
@@ -174,7 +174,7 @@ const modalContent = {
                 <img src="이미지 파일/2. 차량 정보 입력.png" alt="차량 정보 입력" style="width:100%;max-width:350px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
             </div>
             <p><b>차량번호</b>와 <b>소유자명</b>을 정확하게 입력해주세요.<br>차량등록증을 참고하면 쉽게 확인할 수 있습니다.</p>
-            <div style="background:#f8f9fa;border-radius:8px;padding:10px 14px;margin-top:8px;font-size:0.98rem;">
+            <div style="background:#f8f9fa;border-radius:8px;padding:10px 14px;margin-top:8px;font-size:0.9rem;">
                 <b>소유자명 입력 예시:</b> 비엠더블유파이낸셜서비스코리아(주)
             </div>
         `
@@ -191,7 +191,10 @@ const modalContent = {
                         <img src="이미지 파일/참고. 충전카드(I7 카드형).png" alt="충전카드 I7 카드형" style="width:100%;max-width:80px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
                     </div>
                     <span style="font-size:1.05rem;color:#003366;font-weight:700;margin:14px 0 2px 0;">키링형</span>
+                    <div style="display:flex;gap:18px;align-items:flex-end;">
                     <img src="이미지 파일/참고. 충전카드(키링형).png" alt="충전카드 키링형" style="width:100%;max-width:60px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                        <img src="이미지 파일/참고. 충전카드(i7 키링형).png" alt="충전카드 i7 키링형" style="width:100%;max-width:60px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                    </div>
                 </div>
             </div>
             <p>회원가입 시 <b>충전카드</b> 등록은 필수입니다.<br>앱에서 충전카드 번호 16자리를 입력하고 등록을 완료하세요.</p>
@@ -200,7 +203,7 @@ const modalContent = {
     'join-step-4': {
         title: '4. 승인 완료',
         content: `
-            <p style="font-size:1.08rem;text-align:left;margin-bottom:8px;">등록된 차량 정보 확인 후, <b>신차 구매 혜택</b>이 지급됩니다.</p>
+            <p style="font-size:0.98rem;text-align:left;margin-bottom:8px;">등록된 차량 정보 확인 후, <b>신차 구매 혜택</b>이 지급됩니다.</p>
             <div style="display:flex;justify-content:center;margin-bottom:16px;">
                 <img src="이미지 파일/4. 신차구매혜택.png" alt="신차구매혜택" style="width:100%;max-width:120px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
             </div>
@@ -209,7 +212,7 @@ const modalContent = {
                 <div style="margin-bottom:10px;font-weight:600;color:#003366;">[1] 충전 크레딧 선택 시 유의사항</div>
                 <ul style="font-size:0.98rem;line-height:1.7;margin-bottom:14px;">
                     <li>지급된 크레딧은 BMW Charging 앱에서 확인 및 사용 가능합니다.</li>
-                    <li>일부 충전소에서는 사용이 제한될 수 있습니다.</li>
+                    <li>일부 충전소에서는 사용이 제한될 수 있습니다.<br><span style="font-size:0.78rem;color:#666;">(일부 한국도로공사 고속도로 급속 충전기 사용이 불가능할 수 있습니다. *SK일렉링크)</span></li>
                     <li>유효기간 내 사용하지 않으면 자동 소멸됩니다.</li>
                 </ul>
                 <div style="margin-bottom:10px;font-weight:600;color:#003366;">[2] 홈충전기 설치 선택 시 유의사항</div>
@@ -218,6 +221,15 @@ const modalContent = {
                     <li>설치 주소와 연락처 정보를 정확히 입력해 주세요.</li>
                     <li>설치 가능 여부는 현장 점검 결과에 따라 달라질 수 있습니다.</li>
                 </ul>
+                <div style="background:#f8f9fa;border-radius:8px;padding:12px;margin-top:12px;font-size:0.9rem;line-height:1.6;">
+                    <div style="font-weight:600;color:#003366;margin-bottom:8px;">참고:</div>
+                    <ul style="margin:0;padding-left:16px;">
+                        <li>홈충전기 설치 지원 혜택은 표준공사 범위(30m)를 초과하는 경우, 추가 발생 비용(m당 2만원 등)은 고객 부담입니다.</li>
+                        <li>표준공사 미포함 항목: 한국전력 표준시설부담금, 스탠드(20만원), 볼라드(15만원), 바닥도색(20만원) 등 (부가세 별도)</li>
+                        <li>홈충전기 설치 지원 혜택 신청전 설치 가능여부를 사전 확인 바랍니다.</li>
+                        <li>홈충전기 설치가 불가한 경우, 무제한 충전 크레딧으로 변경됩니다.</li>
+                    </ul>
+                </div>
             </div>
         `
     },
@@ -341,17 +353,17 @@ const modalContent = {
             
             <h4 style="color:#003366;font-size:1rem;margin-bottom:10px;">모델별 교환 가능 포인트</h4>
             <div style="overflow-x:auto;margin-bottom:15px;">
-                <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.8rem;">
                     <thead>
                         <tr style="background:#f8f9fa;">
-                            <th style="border:1px solid #dee2e6;padding:8px;text-align:left;">모델</th>
+                            <th style="border:1px solid #dee2e6;padding:8px;text-align:center;">모델</th>
                             <th style="border:1px solid #dee2e6;padding:8px;text-align:center;">BEV<br>(순수 전기차)</th>
                             <th style="border:1px solid #dee2e6;padding:8px;text-align:center;">PHEV<br>(플러그인 하이브리드)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="border:1px solid #dee2e6;padding:8px;font-weight:500;">교환 가능 포인트</td>
+                            <td style="border:1px solid #dee2e6;padding:8px;font-weight:500;text-align:center;">교환 가능 포인트</td>
                             <td style="border:1px solid #dee2e6;padding:8px;text-align:center;">7만 포인트</td>
                             <td style="border:1px solid #dee2e6;padding:8px;text-align:center;">5만 포인트</td>
                         </tr>
@@ -416,7 +428,7 @@ const modalContent = {
         title: 'BMW 차징스테이션 소개',
         content: `
             <h3>BMW 차징허브라운지</h3>
-            <p style="font-size:1.05rem;line-height:1.8;margin-bottom:12px;">BMW 그룹 코리아의 전 세계 첫 라운지형 급속 충전소인 BMW 차징 허브 라운지는 전기차 충전과 카페를 동시에 이용할 수 있는 특화된 전기차 충전소입니다.</p>
+            <p style="font-size:0.9rem;line-height:1.8;margin-bottom:12px;">BMW 그룹 코리아의 전 세계 첫 라운지형 급속 충전소인 BMW 차징 허브 라운지는 전기차 충전과 카페를 동시에 이용할 수 있는 특화된 전기차 충전소입니다.</p>
             <div style="display:flex;justify-content:center;align-items:center;gap:20px;margin-bottom:16px;width:100%;">
                 <img src="이미지 파일/참고. BMW 차징허브라운지" alt="BMW 차징허브라운지" style="max-width:240px;max-height:160px;width:auto;height:auto;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);object-fit:cover;">
                 <img src="이미지 파일/참고. BMW 차징허브라운지2" alt="BMW 차징허브라운지2" style="max-width:240px;max-height:160px;width:auto;height:auto;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);object-fit:cover;">
@@ -454,6 +466,11 @@ function openModal(modalType) {
         modalBody.innerHTML = content.content;
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
+        
+        // 모달이 열릴 때 스크롤을 상단으로 이동
+        setTimeout(() => {
+            modal.scrollTop = 0;
+        }, 10);
     }
 }
 
