@@ -288,7 +288,7 @@ body {
         url('./이미지 파일/참고. 충전카드(키링형).png'),
         url('./이미지 파일/참고. 충전카드(i7 키링형).png');
     background-size: 180px auto, 180px auto, 120px auto, 120px auto;
-    background-position: calc(100% - 30px) 15%, calc(100% - 30px) 60%, calc(100% - 120px) 85%, calc(100% - 30px) 85%;
+    background-position: calc(100% - 30px) 15%, calc(100% - 30px) 60%, calc(100% - 100px) 85%, calc(100% - 30px) 85%;
     background-repeat: no-repeat;
     opacity: 0.15;
     z-index: 0;
@@ -1674,6 +1674,6 @@ html {
     
     .service-card:has(.card-icon i.fa-credit-card)::after {
         background-size: 120px auto, 120px auto, 90px auto, 90px auto;
-        background-position: calc(100% - 15px) 10%, calc(100% - 15px) 60%, calc(100% - 80px) 90%, calc(100% - 15px) 90%;
+        background-position: calc(100% - 15px) 10%, calc(100% - 15px) 60%, calc(100% - 70px) 90%, calc(100% - 15px) 90%;
     }
 } 
