@@ -40,9 +40,6 @@ const modalContent = {
                 <li><strong>BMW xEV:</strong> <b>2023년 1월 1일 이후</b> 등록 차량</li>
             </ol>
             
-            <div class="info-box">
-                이전 등록 차량은 기존 혜택이 유지됩니다.
-            </div>
             
             <h3>🔹 크레딧 지급 과정</h3>
             <ol>
@@ -89,6 +86,70 @@ const modalContent = {
                 <strong>💡 안내:</strong><br>
                 충전카드는 개인정보와 연결되어 있으므로 안전하게 보관하시기 바랍니다.
             </div>
+            
+            <div style="margin-top:20px;text-align:center;">
+                <button onclick="openModal('charging-service-guidelines')" style="background:#003366;color:white;border:none;padding:12px 24px;border-radius:8px;font-size:1rem;cursor:pointer;transition:background 0.3s ease;">
+                    BMW Charging Service 이용 시 유의사항
+                </button>
+            </div>
+        `
+    },
+    'charging-service-guidelines': {
+        title: 'BMW Charging Service 이용 시 유의사항',
+        content: `
+            <p style="font-size:0.9rem;line-height:1.8;margin-bottom:20px;">BMW Charging Service 이용 시 주의사항을 안내드립니다.</p>
+            
+            <h3>📌 1. 혜택 제공 및 이용 제한</h3>
+            <p style="font-size:0.95rem;margin-bottom:8px;">본 혜택은 BMW 신규 구매 차량에 한하여 제공됩니다.</p>
+            <p style="font-size:0.95rem;margin-bottom:8px;">계정, 충전카드, 크레딧 등 혜택은 서비스 대상 차량 외 충전·양도·대여·재판매가 불가합니다.</p>
+            <p style="font-size:0.95rem;margin-bottom:8px;">이를 위반할 경우 다음과 같은 조치가 적용됩니다:</p>
+            <ul style="font-size:0.95rem;margin-bottom:20px;padding-left:20px;">
+                <li>충전 프로그램 회수 등 BMW Charging 서비스의 모든 혜택 즉시 상실</li>
+                <li>발생 문제에 대한 모든 책임은 회원에게 귀속</li>
+                <li>무단사용 혜택에 대한 손해배상 청구 가능</li>
+            </ul>
+            
+            <h3>⏰ 2. 등록 및 유효기간</h3>
+            <p style="font-size:0.95rem;margin-bottom:8px;">충전카드는 등록기한 내 활성화 필수입니다.</p>
+            <p style="font-size:0.95rem;margin-bottom:8px;">→ 등록기한 내 미등록 시 혜택 제공 불가</p>
+            <p style="font-size:0.95rem;margin-bottom:20px;">유효기간 내 사용하지 않은 크레딧은 소멸되며, 환불되지 않습니다.</p>
+            
+            <h3>💳 3. 충전카드 재발급</h3>
+            <p style="font-size:0.95rem;margin-bottom:8px;">충전카드 분실·훼손 시 카드형 충전카드로만 유상 재발급 가능합니다.</p>
+            <p style="font-size:0.95rem;margin-bottom:8px;">(RF칩 손상 시에도 유상 재발급 / 무선 충전패널 보관 시 주의)</p>
+            <p style="font-size:0.95rem;margin-bottom:8px;"><strong>재발급 신청 경로</strong></p>
+            <p style="font-size:0.95rem;margin-bottom:20px;">BMW Charging App > MY차지비 > 충전카드 > 충전카드 관리 > 카드 재발급 신청</p>
+            
+            <h3>🛍️ 4. 쿠폰 스토어 이용</h3>
+            <p style="font-size:0.95rem;margin-bottom:8px;">지급된 크레딧의 일정 비율만큼만 쿠폰 구매 가능합니다.</p>
+            <p style="font-size:0.95rem;margin-bottom:20px;">차종별로 구매 가능한 쿠폰은 상이할 수 있습니다.</p>
+            
+            <h3>⚠️ 5. 금지행위 및 제재 기준</h3>
+            <p style="font-size:0.95rem;margin-bottom:8px;">완성차 구매 혜택으로 지급된 크레딧에 대해 아래 행위를 금지합니다.</p>
+            <p style="font-size:0.95rem;margin-bottom:15px;">적발 시 별도의 통지 없이 충전카드 정지, 혜택 회수, 계정 영구 정지 등의 제재가 적용될 수 있습니다.</p>
+            
+            <div style="background:#fff3cd;border:1px solid #ffeaa7;padding:15px;border-radius:8px;margin-bottom:15px;">
+                <strong>[유형 1: 유효기간 1개월 축소 또는 1개월 정지]</strong>
+                <ul style="font-size:0.95rem;margin-top:8px;padding-left:20px;">
+                    <li>서비스 대상 차량 외 차량 충전</li>
+                    <li>비정상적인 충전 패턴 및 행위</li>
+                    <li>동시·연속·원거리 등 부정 충전</li>
+                    <li>허위 정보·부정 방법으로 재산상 이익 취득 또는 제3자에게 취득하게 하는 행위</li>
+                </ul>
+            </div>
+            
+            <div style="background:#f8d7da;border:1px solid #f5c6cb;padding:15px;border-radius:8px;margin-bottom:20px;">
+                <strong>[유형 2: 혜택 회수 및 계정 영구 정지]</strong>
+                <ul style="font-size:0.95rem;margin-top:8px;padding-left:20px;">
+                    <li>유형 1의 금지행위가 2회 이상 발생</li>
+                    <li>충전카드 또는 계정을 타인에게 양도</li>
+                    <li>거래 성사 여부와 관계없이 충전카드 또는 계정을 거래</li>
+                </ul>
+            </div>
+            
+            <h3>🔌 6. 충전 이용방법</h3>
+            <p style="font-size:0.95rem;margin-bottom:8px;">충전카드를 충전기 인증 단말기에 접촉하여 이용 가능합니다.</p>
+            <p style="font-size:0.95rem;margin-bottom:20px;"><strong>차지비 미제휴 충전소(아파트, 자체 운영 시설 등)</strong>에서는 이용이 불가합니다.</p>
         `
     },
     'join-step-1': {
@@ -205,7 +266,7 @@ const modalContent = {
     'pnc-detail': {
         title: 'PnC(Plug & Charge) 가입 상세 안내',
         content: `
-            <p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;">BMW Charging App에 로그인 후, 내 차량 이미지 선택 →<br>PnC 서비스 이용 가능 여부를 확인하고 간단히 신청할 수 있습니다.</p>
+            <p style="font-size:0.9rem;line-height:1.8;margin-bottom:20px;">BMW Charging App에 로그인 후, 내 차량 이미지 선택 →<br>PnC 서비스 이용 가능 여부를 확인하고 간단히 신청할 수 있습니다.</p>
             
             <ol style="font-size:1.05rem;line-height:2.2;margin-bottom:20px;">
                 <li><b>BMW Charging App 로그인 후 차량 이미지 선택</b></li>
@@ -215,15 +276,25 @@ const modalContent = {
             </ol>
             
             <div class="warning-box" style="margin-top:20px;">
-                <strong>⚠️ PnC는 지원 차량에 한해 제공됩니다.</strong><br>
-                중고차량의 경우, PnC 가입 절차가 다를 수 있으니 고객센터로 문의해주세요.
+                <strong>⚠️ PnC는 지원 차량에 한해 제공됩니다.</strong>
             </div>
         `
     },
     'coupon-detail': {
-        title: '쿠폰 구매 안내',
+        title: '프리미엄 라이프 서비스',
         content: `
-            <p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;">BMW Charging App에서 다양한 쿠폰을 구매하실 수 있습니다.</p>
+            <div style="display:flex;gap:15px;margin-bottom:30px;justify-content:center;">
+                <button onclick="scrollToSection('coupon-purchase')" style="background:#003366;color:white;border:none;padding:12px 24px;border-radius:8px;font-size:1rem;cursor:pointer;transition:background 0.3s ease;flex:1;max-width:200px;">
+                    쿠폰 구매
+                </button>
+                <button onclick="scrollToSection('valet-parking')" style="background:#666;color:white;border:none;padding:12px 24px;border-radius:8px;font-size:1rem;cursor:pointer;transition:background 0.3s ease;flex:1;max-width:200px;">
+                    발레 주차 (i7 차량)
+                </button>
+            </div>
+            
+            <div id="coupon-purchase">
+                <h3 style="color:#003366;font-size:1.2rem;margin-bottom:15px;">쿠폰 구매</h3>
+                <p style="font-size:0.9rem;line-height:1.8;margin-bottom:20px;">BMW Charging App에서 다양한 쿠폰을 구매하실 수 있습니다.</p>
             
             <ol style="font-size:1.05rem;line-height:2.2;margin-bottom:20px;">
                 <li><b>BMW Charging App 로그인</b></li>
@@ -250,6 +321,93 @@ const modalContent = {
                 
                 <div style="font-size:0.9rem;">
                     <span style="color:#003366;font-weight:500;">카카오T 쿠폰</span> - 카카오T 앱 내 택시, 대리, 주차 등 서비스 이용 시 사용 가능
+                </div>
+            </div>
+            
+            <h3 style="margin-top:30px;margin-bottom:15px;color:#003366;font-size:1.1rem;">카카오T 포인트 교환</h3>
+            <div style="background:#f8f9fa;border:1px solid #e9ecef;padding:15px;border-radius:8px;margin-bottom:20px;">
+                <p style="font-size:0.9rem;margin-bottom:8px;color:#666;">(i7, iX 모델 제외)</p>
+                <div style="display:flex;justify-content:space-between;margin-bottom:10px;font-size:0.9rem;">
+                    <span><strong>이벤트 혜택:</strong> 차량 구매 시 지급된 포인트는 카카오 T 포인트로 교환 가능</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:10px;font-size:0.9rem;">
+                    <span><strong>이벤트 기간:</strong> ~25년 12월 31일까지</span>
+                </div>
+                <p style="font-size:0.8rem;color:#666;margin:0;">※이벤트 제휴사의 사정에 따라 변경되거나 조기 종료될 수 있습니다.</p>
+            </div>
+            
+            <h4 style="color:#003366;font-size:1rem;margin-bottom:10px;">카카오T 포인트란?</h4>
+            <p style="font-size:0.9rem;margin-bottom:15px;line-height:1.6;">카카오 T, 카카오내비 앱에서 현금처럼 사용 가능하며, 전기차 충전, 대리, 택시 등 카카오 T 및 카카오내비 주요 서비스에서 사용가능합니다.</p>
+            
+            <h4 style="color:#003366;font-size:1rem;margin-bottom:10px;">모델별 교환 가능 포인트</h4>
+            <div style="overflow-x:auto;margin-bottom:15px;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+                    <thead>
+                        <tr style="background:#f8f9fa;">
+                            <th style="border:1px solid #dee2e6;padding:8px;text-align:left;">모델</th>
+                            <th style="border:1px solid #dee2e6;padding:8px;text-align:center;">BEV<br>(순수 전기차)</th>
+                            <th style="border:1px solid #dee2e6;padding:8px;text-align:center;">PHEV<br>(플러그인 하이브리드)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border:1px solid #dee2e6;padding:8px;font-weight:500;">교환 가능 포인트</td>
+                            <td style="border:1px solid #dee2e6;padding:8px;text-align:center;">7만 포인트</td>
+                            <td style="border:1px solid #dee2e6;padding:8px;text-align:center;">5만 포인트</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h4 style="color:#003366;font-size:1rem;margin-bottom:10px;">포인트 차감 상세</h4>
+            <p style="font-size:0.9rem;margin-bottom:10px;">포인트 교환 시 10% 수수료가 충전 포인트에서 차감됩니다.</p>
+            <div style="background:#f8f9fa;border:1px solid #e9ecef;padding:12px;border-radius:6px;margin-bottom:10px;">
+                <p style="font-size:0.9rem;margin-bottom:5px;"><strong>포인트 차감 예시</strong></p>
+                <p style="font-size:0.85rem;margin-bottom:3px;">• BEV 모델 7만 포인트 교환 시 7만7천 포인트 차감 후 7만 포인트 적립</p>
+                <p style="font-size:0.85rem;margin:0;">• PHEV 모델 5만 포인트 교환 시 5만 5천 포인트 차감 후 5만 포인트 적립</p>
+            </div>
+            <p style="font-size:0.9rem;margin-bottom:15px;"><strong>유효기간:</strong> 쿠폰번호 발급 및 등록 후 180일</p>
+            
+            <h4 style="color:#003366;font-size:1rem;margin-bottom:10px;">포인트 교환 방법</h4>
+            <div style="margin-bottom:15px;">
+                <p style="font-size:0.9rem;margin-bottom:8px;"><strong>1. BMW Charging 앱 | 쿠폰 발급 및 난수 번호 확인</strong></p>
+                <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">BMW Charging 앱 로그인 ▶ MY차지비 ▶ 쿠폰스토어 ▶ 구매하기 ▶ 카카오T 쿠폰 선택 ▶ 구매하기 ▶ 쿠폰함 ▶ 카카오T 쿠폰 번호 확인</p>
+            </div>
+            <div>
+                <p style="font-size:0.9rem;margin-bottom:8px;"><strong>2. 카카오T 앱 | 쿠폰 번호 등록 및 포인트 지급</strong></p>
+                <p style="font-size:0.85rem;color:#666;margin-bottom:15px;">카카오T 앱 로그인 ▶ 내정보 ▶ 포인트 ▶ 쿠폰 번호 등록 ▶ 포인트 지급</p>
+            </div>
+            
+            <div style="background:#f8d7da;border:1px solid #f5c6cb;padding:12px;border-radius:6px;margin-top:15px;">
+                <p style="font-size:0.9rem;margin:0;color:#721c24;"><strong>⚠️ 주의사항:</strong> 카카오T 앱에 등록된 쿠폰은 환불이 불가능합니다.</p>
+            </div>
+            </div>
+            
+            <div id="valet-parking" style="margin-top:40px;">
+                <h3 style="color:#003366;font-size:1.2rem;margin-bottom:15px;">발레 주차</h3>
+                <h4 style="color:#003366;font-size:1.1rem;margin-bottom:15px;">i7 고객님께 드리는 충전 대행 서비스</h4>
+                <p style="font-size:0.9rem;line-height:1.8;margin-bottom:20px;">커피연구소 이디야 커피랩 방문 시 전기차 충전 대행 서비스와 발레 주차가 결합된 특별한 경험을 드립니다.</p>
+                
+                <h4 style="color:#003366;font-size:1rem;margin-bottom:10px;">제공 서비스</h4>
+                <div style="background:#f8f9fa;border:1px solid #e9ecef;padding:15px;border-radius:8px;margin-bottom:20px;">
+                    <p style="font-size:0.9rem;margin-bottom:10px;font-weight:600;">충전 대행 및 발레 주차 라이트 상품 (3회)</p>
+                    <ul style="font-size:0.9rem;line-height:1.6;margin:0;padding-left:20px;">
+                        <li>약 25kWh 충전 대행 및 발레 주차 무료 (*주차비 별도)</li>
+                        <li>이디야 커피랩 상품 구매시 1시간 주차 무료 (*2만원 이상 구매시 2시간 무료)</li>
+                        <li>초과 주차비용은 고객 부담입니다.</li>
+                    </ul>
+                </div>
+                
+                <h4 style="color:#003366;font-size:1rem;margin-bottom:10px;">이용 방법</h4>
+                <ol style="font-size:0.9rem;line-height:1.6;margin-bottom:20px;padding-left:20px;">
+                    <li>이디야 커피랩 발레 부스 방문 후 BMW i7 Charging 충전카드를 제시해주세요.</li>
+                    <li>이디야 커피랩 위치: 서울시 강남구 논현로 636</li>
+                </ol>
+                
+                <div style="text-align:center;margin-top:25px;">
+                    <button onclick="window.open('https://carner.kakaomobility.com/web2app/bridge?action=kakaonavi%3A%2F%2Fcommon%3Fdata%3D%7B%22page%22%3A%22search_place%22%2C%22keyword%22%3A%22%EC%9D%B4%EB%94%94%EC%95%BC%EC%BB%A4%ED%94%BC%EB%9E%A9%22%7D%26ref%3Dchargev_bmw', '_blank')" style="background:#003366;color:white;border:none;padding:12px 24px;border-radius:8px;font-size:1rem;cursor:pointer;transition:background 0.3s ease;">
+                        위치 확인하기
+                    </button>
                 </div>
             </div>
         `
@@ -287,6 +445,24 @@ const modalContent = {
         `
     }
 };
+
+// Modal open function
+function openModal(modalType) {
+    const content = modalContent[modalType];
+    if (content) {
+        modalTitle.textContent = content.title;
+        modalBody.innerHTML = content.content;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Event listeners ([data-modal] 속성이 있는 모든 요소)

@@ -284,9 +284,10 @@ body {
     background-image: 
         url('이미지 파일/참고. 충전카드(카드형).png'),
         url('이미지 파일/참고. 충전카드(I7 카드형).png'),
-        url('이미지 파일/참고. 충전카드(키링형).png');
-    background-size: 180px auto, 180px auto, 120px auto;
-    background-position: calc(100% - 30px) 15%, calc(100% - 30px) 60%, calc(100% - 30px) 85%;
+        url('이미지 파일/참고. 충전카드(키링형).png'),
+        url('이미지 파일/참고. 충전카드(I7 키링형).png');
+    background-size: 180px auto, 180px auto, 120px auto, 120px auto;
+    background-position: calc(100% - 30px) 15%, calc(100% - 30px) 60%, calc(100% - 120px) 85%, calc(100% - 30px) 85%;
     background-repeat: no-repeat;
     opacity: 0.15;
     z-index: 0;
@@ -373,8 +374,15 @@ body {
     background: #fff;
     border: 1px solid #e6eaf0;
     border-radius: 14px;
-    padding: 16px 14px;
+    padding: 20px 16px;
     transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    height: 180px;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .step:hover {
@@ -1663,7 +1671,7 @@ html {
     }
     
     .service-card:has(.card-icon i.fa-credit-card)::after {
-        background-size: 120px auto, 120px auto, 90px auto;
-        background-position: calc(100% - 15px) 10%, calc(100% - 15px) 60%, calc(100% - 15px) 90%;
+        background-size: 120px auto, 120px auto, 90px auto, 90px auto;
+        background-position: calc(100% - 15px) 10%, calc(100% - 15px) 60%, calc(100% - 80px) 90%, calc(100% - 15px) 90%;
     }
 } 
