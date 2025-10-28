@@ -430,12 +430,11 @@ const modalContent = {
         content: `
             <h3>BMW 차징허브라운지</h3>
             <p style="font-size:0.9rem;line-height:1.8;margin-bottom:12px;">BMW 그룹 코리아의 전 세계 첫 라운지형 급속 충전소인 BMW 차징 허브 라운지는 전기차 충전과 카페를 동시에 이용할 수 있는 특화된 전기차 충전소입니다.</p>
-            <div style="display:flex;justify-content:center;align-items:center;gap:20px;margin-bottom:16px;width:100%;">
-                <img src="이미지 파일/참고. BMW 차징허브라운지.png" alt="BMW 차징허브라운지" style="max-width:240px;max-height:160px;width:auto;height:auto;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);object-fit:cover;">
-                <img src="이미지 파일/참고. BMW 차징허브라운지2.png" alt="BMW 차징허브라운지2" style="max-width:240px;max-height:160px;width:auto;height:auto;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);object-fit:cover;">
+            <div style="display:flex;justify-content:center;align-items:center;margin-bottom:16px;width:100%;">
+                <img src="이미지 파일/CHARGING HUB.png" alt="BMW CHARGING HUB" style="max-width:500px;max-height:250px;width:auto;height:auto;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);object-fit:cover;">
             </div>
             <div class="highlight" style="margin-bottom:16px;">
-                <a href="https://blog.naver.com/gschargev/223753561274" target="_blank" style="color:#003366;text-decoration:underline;font-weight:500;">차징허브라운지 상세 안내 보기</a>
+                <a href="https://blog.naver.com/bmwgroupkorea/223786870302" target="_blank" style="color:#003366;text-decoration:underline;font-weight:500;">차징허브라운지 상세 안내 보기</a>
             </div>
             <h3>BMW 차징스테이션 특징</h3>
             <ul style="font-size:1.05rem;line-height:2;">
