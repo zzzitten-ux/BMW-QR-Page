@@ -188,7 +188,7 @@ const modalContent = {
                     <span style="font-size:1.05rem;color:#003366;font-weight:700;margin-bottom:2px;">카드형</span>
                     <div style="display:flex;gap:18px;align-items:flex-end;">
                         <img src="이미지 파일/참고. 충전카드(카드형).png" alt="충전카드 카드형" style="width:100%;max-width:80px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-                        <img src="이미지 파일/참고. 충전카드(I7 카드형).png" alt="충전카드 I7 카드형" style="width:100%;max-width:80px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                        <img src="이미지 파일/참고. 충전카드(i7 카드형).png" alt="충전카드 i7 카드형" style="width:100%;max-width:80px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
                     </div>
                     <span style="font-size:1.05rem;color:#003366;font-weight:700;margin:14px 0 2px 0;">키링형</span>
                     <div style="display:flex;gap:18px;align-items:flex-end;">
