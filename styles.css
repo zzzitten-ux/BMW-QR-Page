@@ -284,7 +284,7 @@ body {
     bottom: 0;
     background-image: 
         url('이미지 파일/참고. 충전카드(카드형).png'),
-        url('이미지 파일/참고. 충전카드(i7 카드형).png'),
+        url('이미지 파일/card_i7.png'),
         url('이미지 파일/참고. 충전카드(키링형).png'),
         url('이미지 파일/참고. 충전카드(i7 키링형).png');
     background-size: 180px auto, 180px auto, 120px auto, 120px auto;
